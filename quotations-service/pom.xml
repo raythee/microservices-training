@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.turnkeyafrica.turnkey-training</groupId>
     <artifactId>quotations-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>latest</version>
     <name>quotations-service</name>
     <description>quotations-service</description>
     <properties>

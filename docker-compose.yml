@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  turnquest-discovery-service:
+    container_name: turnquest-discovery-service
+    image: discovery-service
+    ports:
+      - "8761:8761"
+
+  turnquest-api-gateway:
+    container_name: turnquest-api-gateway
+    image: api-gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      - turnquest-discovery-service
+
+  turnquest-quotations-service:
+    container_name: turnquest-quotations-service
+    image: quotations-service
+    ports:
+      - "8081:8081"
+
+    depends_on:
+      - turnquest-discovery-service
+      - turnquest-api-gateway

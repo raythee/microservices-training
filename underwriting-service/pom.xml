@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.turnkeyafrica.turnkey-training</groupId>
 	<artifactId>underwriting-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>latest</version>
 	<name>underwriting-service</name>
 	<description>underwriting-service</description>
 	<properties>
@@ -53,6 +53,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>underwriting-service</finalName>
 	</build>
 
 </project>
