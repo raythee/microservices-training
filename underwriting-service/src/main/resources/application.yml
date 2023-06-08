@@ -1,0 +1,20 @@
+server:
+  port: 0
+turnkey:
+  app:
+    base-path: /api/underwriting
+    v1:
+      context-path: ${turnkey.app.base-path}/v1
+    v2:
+      context-path: ${turnkey.app.base-path}/v2
+spring:
+  application:
+    name: underwriting-service
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+
